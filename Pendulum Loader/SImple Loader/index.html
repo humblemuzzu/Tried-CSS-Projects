@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animated Loader</title>
+    <style>
+      body {
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #151515;
+      }
+
+      button {
+        height: 60px;
+        width: 60px;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 50%;
+        border-top: 3px solid #1d9af2;
+        border-right: 3px solid transparent;
+        border-bottom: none;
+        border-left: none;
+        animation: spinner 700ms linear infinite;
+      }
+
+      @keyframes spinner {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button></button>
+  </body>
+</html>
